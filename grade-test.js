@@ -43,22 +43,7 @@ var x = event.keyCode;
                document.getElementById('answer').innerHTML = "F";}
                if (F.indexOf(avg) >= 0){
                document.getElementById('average').innerHTML = "Your average Grade is" + ' ' + avg;}
-});}else{
-$("#gradeTest").click(function(){
-    let valueInput = parseInt(document.getElementById("myInput").value);
-      if (A.indexOf(valueInput) >= 0){
-        document.getElementById('answer').innerHTML = "A";}
-          else if(B.indexOf(valueInput) >= 0){
-            document.getElementById('answer').innerHTML = "B";}
-            else if (C.indexOf(valueInput) >= 0){
-              document.getElementById("answer").innerHTML = "C";}
-              else if (D.indexOf(valueInput) >= 0){
-                document.getElementById("answer").innerHTML = "D";}
-                else if (F.indexOf(valueInput) >= 0){
-                  document.getElementById("answer").innerHTML = "F";}
-                  else if(valueInput > 100 || valueInput < 0){
-                  document.getElementById("answer").innerHTML = "Invalid Number";}
-                });}
+});}
 });
 
 $("#myInput").click(function(){
